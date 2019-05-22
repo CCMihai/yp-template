@@ -1,0 +1,39 @@
+figure {
+	position: relative;
+	margin-bottom: 25px;
+}
+figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.75);
+	display: none;
+}
+figure:hover figcaption {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+figure h4 {
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+}
+img.selected {
+	padding: 3px;
+	border: 2px solid #000;
+}
+figcaption .radio label {
+	padding-left: 12px;
+}
+
+
+@media screen and (max-width: 650px) {
+	#ypContainer div.col-xs-6 {
+		width: 100%;
+	}
+}
